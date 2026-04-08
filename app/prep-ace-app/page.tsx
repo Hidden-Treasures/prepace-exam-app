@@ -16,7 +16,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 // Mobile (Android) download link
-const MOBILE_APP_URL = "/downloads/prep-ace-mobile.apk";
+const MOBILE_APP_URL =
+  "https://github.com/Hidden-Treasures/prepace-exam-app/releases/download/v1.0.0/prepace_android.apk";
 
 export default function PrepAceAppPage() {
   return (
@@ -162,7 +163,10 @@ export default function PrepAceAppPage() {
               </div>
               {/* Download buttons: Android works, Windows shows Coming Soon */}
               <div className="flex flex-col sm:flex-row gap-3 mt-2">
-                <Button className="flex-1 bg-blue-700 hover:bg-blue-800" asChild>
+                <Button
+                  className="flex-1 bg-blue-700 hover:bg-blue-800"
+                  asChild
+                >
                   <a
                     href={MOBILE_APP_URL}
                     download="PrepAce_Mobile.apk"
@@ -171,11 +175,7 @@ export default function PrepAceAppPage() {
                     📱 Download for Android
                   </a>
                 </Button>
-                <Button
-                  className="flex-1"
-                  variant="outline"
-                  disabled
-                >
+                <Button className="flex-1" variant="outline" disabled>
                   💻 Windows (Coming Soon)
                 </Button>
               </div>
